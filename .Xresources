@@ -1,0 +1,99 @@
+#include "/home/plebb/.colors/s3r0"
+
+! #########################################
+urxvt*perl-lib:			/usr/lib/urxvt/perl
+urxvt*perl-ext-common:		default,matcher,clipboard,font-size
+urxvt*perl-matcher: 		1
+urxvt*matcher-button: 		3
+urxvt*url-launcher:		/usr/bin/firefox
+!URxvt*matcher.button: 1
+!URxvt*matcher.pattern.1: \\bwww\\.[\\w-]\\.[\\w./?&@#-]*[\\w/-]
+urxvt*cursorUnderline: 1
+urxvt*letterspace: -5
+!urxvt*fading: 			10
+!urxvt*fadeColor: 		#000000	
+urxvt*cursorBlink:		true
+urxvt*scrollBar:		false
+urxvt*depth:			32 
+urxvt*internalBorder: 	12
+urxvt*dynamicColors: on
+urxvt.urgentOnBell:  true
+
+! Font change settings
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+URxvt.keysym.C-7: command:\033]710;-lokaltog-fixed-medium-r-normal--10-100-75-75-c-60-iso8859-1\007\033]711;-lokaltog-fixed-medium-r-normal--10-100-75-75-c-60-iso8859-1\007
+URxvt.keysym.C-8: command:\033]710;-*-neep-medium-r-semicondensed-*-11-*-*-*-*-*-*-*\007\033]711;-*-neep-medium-r-semicondensed-*-11-*-*-*-*-*-*-*\007
+!URxvt.keysym.C-8: command:\033]710;-*-lemon-*-*-*-*-*-*-*-*-*-*-*-*\007\033]711;-*-lemon-*-*-*-*-*-*-*-*-*-*-*-*\007
+!URxvt.keysym.C-9: command:\033]710;-*-tewi-medium-r-normal-*-*-*-*-*-*-*-*-*\007\033]711;-*-tewi-medium-r-normal-*-*-*-*-*-*-*-*-*\007
+URxvt.keysym.C-9: command:\033]710;-*-tamzen-medium-r-normal-*-*-87-*-*-*-*-*-*\007\033]711;-*-tamzen-medium-r-normal-*-*-87-*-*-*-*-*-*\007
+URxvt.keysym.C-0: command:\033]710;xft:monaco:size=9\007\033]711;xft:monaco:size=9\007
+URxvt.keysym.C-equal:	perl:font-size:increase
+URxvt.keysym.C-minus:   perl:font-size:decrease
+
+URxvt.font: xft:Terminess Nerd Font:style=Regular:size=12
+URxvt.boldFont: xft:Terminess Nerd Font:style=Bold:size=12
+URxvt.italicFont: xft:Terminess Nerd Font:style=Italic:size=12
+URxvt.boldItalicFont: xft:Terminess Nerd Font:style=Bold Italic:size=12
+
+!urxvt*font: -*-terminus12-medium-r-normal-*-*-*-*-*-*-*-*-*
+!urxvt*boldFont: -*-terminus12-bold-r-normal-*-*-*-*-*-*-*-*-*
+!urxvt*italicFont: -*-terminus12-medium-r-normal-*-*-*-*-*-*-*-*-*
+!urxvt*bolditalicFont: -*-terminus12-bold-r-normal-*-*-*-*-*-*-*-*-*
+
+!urxvt*font: -*-terminus-medium-r-normal-*-11-*-*-*-*-*-*-* 
+!urxvt*boldFont: -*-terminus-medium-r-normal-*-11-*-*-*-*-*-*-* 
+!urxvt*italicFont: -*-terminus-medium-r-normal-*-11-*-*-*-*-*-*-* 
+!urxvt*bolditalicFont: -*-terminus-medium-r-normal-*-11-*-*-*-*-*-*-* 
+
+Xft.antialias: 1
+Xft.autohint: 0
+Xft.dpi: 96
+Xft.hinting: 1
+Xft.hintstyle: hintfull
+Xft.lcdfilter: lcddefault
+Xft.rgba: rgb
+
+!*.background: #1f1f1f
+!*foreground: #c0b18b
+
+!black
+!*color0:#4A3637
+!*color8:#4A3637
+!
+!!red
+!*color1:#d17b49
+!*color9:#d17b49
+!
+!!green
+!*color2:#7b8748
+!*color10:#7b8748
+!
+!!yellow
+!*color3:#af865a
+!*color11:#af865a
+!
+!!blue
+!*color4:#535C5C
+!*color12:#535C5C
+!
+!!magenta
+!*color5:#775759
+!*color13:#775759
+!
+!!cyan
+!*color6:#6d715e
+!*color14:#6d715e
+!
+!!white
+!*color7:#c0b18b
+!*color15:#c0b18b
+
+! dwm colors
+dwm.normbordercolor: #4A3637
+dwm.normbgcolor: #1f1f1f
+dwm.normfgcolor: #c0b18b
+
+dwm.selbordercolor: #d17b49
+dwm.selbgcolor: #1f1f1f
+dwm.selfgcolor: #af865a

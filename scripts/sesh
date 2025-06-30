@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+SESSIONNAME="dev"
+
+tmux has-session -t $SESSIONNAME &> /dev/null
+
+if [ $? != 0 ] 
+then
+    tmux new-session -s ${SESSIONNAME} -n "editor" -d
+    tmux send-keys -t ${SESSIONNAME}:1 "nvim" C-m
+
+	tmux new-window -t ${SESSIONNAME} -n "test"
+	tmux new-window -t ${SESSIONNAME} -n "misc"
+	
+	tmux new-window -t ${SESSIONNAME} -n "top"
+	tmux send-keys -t ${SESSIONNAME}:4 "btop" C-m
+
+	tmux select-window -t ${SESSIONNAME}:1
+fi
+
+tmux attach -t $SESSIONNAME
+
